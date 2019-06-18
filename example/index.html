@@ -19,6 +19,13 @@
     #canvas {
       background: black;
     }
+    .prompt {
+      color: #aaa;
+      position: absolute;
+      width: 100%;
+      bottom: 80px;
+      text-align: center;
+    }
     .panel {
       width: 160px;
       background-color: rgba(100, 100, 100, 0.5);
@@ -59,6 +66,7 @@
   </style>
   <body>
     <canvas id="canvas" width="100" height="100"></canvas>
+    <p class="prompt">Click to move the circle. Scroll to change its size</p>
     <div class="panel xy">
       <h3>Position Spring</h3>
       <div class="sliders">
