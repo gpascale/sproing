@@ -1,0 +1,146 @@
+<html>
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      font-family: georgia, garamond, serif;
+      cursor: pointer;
+    }
+    h1,
+    h2,
+    h3,
+    p,
+    input,
+    div {
+      margin: 0;
+    }
+    #canvas {
+      background: black;
+    }
+    .panel {
+      width: 160px;
+      background-color: rgba(100, 100, 100, 0.5);
+      color: white;
+      padding: 10px;
+    }
+    .sliders {
+      width: 120px;
+      margin: 0 auto;
+    }
+    .slider {
+      width: 100%;
+    }
+    h3 {
+      margin-bottom: 20px;
+    }
+    .labeledSlider:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    .labeledSlider div {
+      margin-bottom: 5px;
+    }
+    .labelWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .panel.xy {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    .panel.size {
+      position: absolute;
+      right: 240px;
+      top: 20px;
+    }
+  </style>
+  <body>
+    <canvas id="canvas" width="100" height="100"></canvas>
+    <div class="panel xy">
+      <h3>Position Spring</h3>
+      <div class="sliders">
+        <div class="labeledSlider tension">
+          <div class="labelWrapper">
+            <span class="label">Tension</span>
+            <span class="value">30</span>
+          </div>
+          <input
+            type="range"
+            min="1"
+            max="1000"
+            value="50"
+            class="slider"
+            param="tension"
+          />
+        </div>
+        <div class="labeledSlider">
+          <div class="labelWrapper">
+            <span class="label">Damping</span>
+            <span class="value">70</span>
+          </div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="70"
+            class="slider"
+            param="damping"
+          />
+        </div>
+        <div class="labeledSlider">
+          <div class="labelWrapper">
+            <span class="label">Mass</span>
+            <span class="value">1.5</span>
+          </div>
+          <input type="range" min="1" max="100" value="1.5" class="slider" param="mass" />
+        </div>
+      </div>
+    </div>
+
+    <div class="panel size">
+      <h3>Size Spring</h3>
+      <div class="sliders">
+        <div class="labeledSlider tension">
+          <div class="labelWrapper">
+            <span class="label">Tension</span>
+            <span class="value">30</span>
+          </div>
+          <input
+            type="range"
+            min="1"
+            max="1000"
+            value="50"
+            class="slider"
+            param="tension"
+          />
+        </div>
+        <div class="labeledSlider">
+          <div class="labelWrapper">
+            <span class="label">Damping</span>
+            <span class="value">70</span>
+          </div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="70"
+            class="slider"
+            param="damping"
+          />
+        </div>
+        <div class="labeledSlider">
+          <div class="labelWrapper">
+            <span class="label">Mass</span>
+            <span class="value">1.5</span>
+          </div>
+          <input type="range" min="1" max="100" value="1.5" class="slider" param="mass" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="../dist/sproing.umd.js"></script>
+  <script type="text/javascript" src="./example.js"></script>
+</html>
