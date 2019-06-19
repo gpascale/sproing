@@ -1,6 +1,6 @@
 {
   "name": "sproing",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/sproing.js",
   "module": "dist/sproing.es.js",
