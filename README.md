@@ -9,6 +9,8 @@
 
 [Demo](https://gpascale.github.io/sproing/example/)
 
+<img src="example-small.gif" width="640">
+
 ## Install
 
 ```bash
